@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ProfiHitch | Coming Soon</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Pacifico&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
+    />
+    <!-- theme stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/soon/3-0/css/style.default.a81c0a19.css"
+      id="theme-stylesheet"
+    />
+    <!-- Custom stylesheet - for your changes-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/soon/3-0/css/custom.0a822280.css"
+    />
+    <!-- Favicon-->
+    <link
+      rel="shortcut icon"
+      href="https://d19m59y37dris4.cloudfront.net/soon/3-0/img/favicon.png"
+    />
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+      }
+
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+
+      .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+
+      #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      /* Custom animation */
+      @keyframes heartbeat {
+        from {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .job-seeker-icon {
+        font-size: 6rem; /* Adjust size as needed */
+      }
+
+      /* Apply animation on hover */
+      .job-seeker-icon:hover {
+        animation: heartbeat 1.5s infinite;
+      }
+
+      .coming-soon-icon {
+        animation: heartbeat 1.5s infinite; /* Apply animation */
+      }
+
+      .btn-primary {
+        background-color: #20ce6e !important;
+        border-color: #20ce6e !important;
+      }
+
+      .vertical-border {
+        border-right: 1px solid #fff; /* Adjust color and thickness as needed */
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        #brand-logo {
+          width: 90%;
+        }
+
+        .vertical-border {
+          border-right: 0px;
+        }
+
+        .job-seeker-icon {
+          font-size: 4rem; /* Adjust size for smaller screens */
+        }
+
+        .coming-soon-icon {
+          font-size: 4rem; /* Adjust size for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="page-holder position-relative d-flex justify-content-between flex-column"
+      id="video"
+    >
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/video/BRB3.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+      <div class="container position-relative z-index-20 pt-3 pb-5">
+        <ul class="list-inline text-center text-lg-end">
+          <li class="list-inline-item">
+            <a class="social-link social-link-facebook" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link social-link-twitter" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link social-link-instagram" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="container text-center text-white position-relative z-index-20 pt-lg-5 my-5"
+      >
+        <img
+          src="assets/images/brand/white-green-big-with-title.png"
+          alt="ProfiHitch Comming Soon!"
+          id="brand-logo"
+          width="600px"
+        />
+        <!-- <h1 class="text-shadow mb-4 mt-2">
+          We are coming soon!
+          <i class="fa fa-heart text-danger coming-soon-icon"></i>
+        </h1> -->
+      </div>
+
+      <p>
+        ProfiHitch is setting a new standard in professional matchmaking, where simplycity and privacy unite to serve both job seekers and employers. Our platform offers an intutive, secure way to connect with your perfect job or ideal candidate, ensuring a seamless match without compromising data integrity. For employers, this means access to top talent with peace of mind. For job seekers, it's a dircet path to your next opportunity, confidentially!
+      </p>
+
+      <div class="container text-white text-center z-index-20 py-5">
+        <p class="h2 font-family-base fw-light mb-4 text-shadow">
+          Good things come to those who wait, but the best careers comes to
+          those who
+          <span
+            title="ProfiHitch is setting a new standard in professional matchmaking, where simplycity and privacy unite to serve both job seekers and employers. Our platform offers an intutive, secure way to connect with your perfect job or ideal candidate, ensuring a seamless match without compromising data integrity. For employers, this means access to top talent with peace of mind. For job seekers, it's a dircet path to your next opportunity, confidentially!"
+            data-toggle="tooltip"
+            style="color: #20ce6e"
+            >ProfiHitch!</span
+          >
+        </p>
+        <p class="h2 font-family-base fw-light mb-4 text-shadow">
+          Stay tuned...
+        </p>
+        <div class="row">
+          <div class="col-lg-6 mx-auto vertical-border">
+            <div class="container mt-5 mb-2">
+              <div class="text-center">
+                <i class="fa fa-user-md job-seeker-icon"></i>
+              </div>
+              I am a Job Seeker
+            </div>
+            <form
+              id="job-seeker-form"
+              class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center"
+            >
+              <div class="input-group">
+                <input
+                  class="form-control mb-2 me-sm-2 rounded transparent-bg"
+                  id="discipline"
+                  placeholder="Your Discipline?"
+                />
+                <input
+                  class="form-control mb-2 me-sm-2 rounded transparent-bg"
+                  id="job_seeker_email"
+                  type="email"
+                  placeholder="Your contact email"
+                />
+                <button
+                  class="btn btn-primary letter-spacing-3 mb-2 rounded"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- seperator -->
+          <div class="col-lg-6 mx-auto">
+            <div class="container mt-5 mb-2">
+              <div class="text-center">
+                <i class="fa fa-binoculars job-seeker-icon"></i>
+              </div>
+              I am an Employer
+            </div>
+            <form
+              id="employer-form"
+              class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center"
+            >
+              <div class="input-group">
+                <input
+                  class="form-control mb-2 me-sm-2 rounded transparent-bg"
+                  id="company_name"
+                  placeholder="Your Company name?"
+                />
+                <input
+                  class="form-control mb-2 me-sm-2 rounded transparent-bg"
+                  id="employer_email"
+                  type="email"
+                  placeholder="Your contact email"
+                />
+                <button
+                  class="btn btn-primary letter-spacing-3 mb-2 rounded"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="py-4 w-100 text-sm text-white z-index-20 position-relative"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-start">
+              <p>&copy;2024 ProfiHitch</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Thank you! <i class="fa fa-heart text-danger"></i>
+            </h4>
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Thank you for providing your details. Our team will be in touch with
+            you shortly.
+          </div>
+
+          <!-- Modal footer -->
+          <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // Job Seeker form Function to handle form submission
+        $('[data-toggle="tooltip"]').tooltip();
+        $("#job-seeker-form").submit(function (event) {
+          // Prevent default form submission
+          event.preventDefault();
+
+          // Get form data
+          var formData = {
+            discipline: $("#discipline").val(),
+            email: $("#job_seeker_email").val(),
+            user_type: 0,
+          };
+
+          // Send POST request to API
+          $.ajax({
+            type: "POST",
+            url: "https://admin.skappd.com/api/v1/enquiries",
+            // url: "https://example.com/api/endpoint",
+            data: JSON.stringify(formData),
+            contentType: "application/json",
+            success: function (response) {
+              console.log("Success:", response);
+              $("#myModal").modal("show");
+              // Handle success response here
+            },
+            error: function (xhr, status, error) {
+              console.error("Error:", error);
+              // Handle error here
+            },
+          });
+        });
+
+        // Function to handle form submission
+        $("#employer-form").submit(function (event) {
+          // Prevent default form submission
+          event.preventDefault();
+
+          // Get form data
+          var formData = {
+            company_name: $("#company_name").val(),
+            email: $("#employer_email").val(),
+            user_type: 1,
+          };
+
+          // Send POST request to API
+          $.ajax({
+            type: "POST",
+            url: "https://admin.skappd.com/api/v1/enquiries",
+            // url: "https://example.com/api/endpoint",
+            data: JSON.stringify(formData),
+            contentType: "application/json",
+            success: function (response) {
+              console.log("Success:", response);
+              $("#myModal").modal("show");
+              // Handle success response here
+            },
+            error: function (xhr, status, error) {
+              console.error("Error:", error);
+              // Handle error here
+            },
+          });
+        });
+      });
+    </script>
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/soon/3-0/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/soon/3-0/vendor/vidim/vidim.min.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Brevo Conversations {literal} -->
+    <script>
+      (function(d, w, c) {
+          w.BrevoConversationsID = '62f9ede9950a7c12055a3e8f';
+          w[c] = w[c] || function() {
+              (w[c].q = w[c].q || []).push(arguments);
+          };
+          var s = d.createElement('script');
+          s.async = true;
+          s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+          if (d.head) d.head.appendChild(s);
+      })(document, window, 'BrevoConversations');
+    </script>
+    <!-- /Brevo Conversations {/literal} -->
+
+  </body>
+</html>
